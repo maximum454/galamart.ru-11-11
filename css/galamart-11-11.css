@@ -50,6 +50,38 @@ body{
     height: auto;
 }
 
+.remodal{
+    max-width: 800px;
+    border: 20px solid #FDB913;
+    background-color: #C9363F;
+    text-align: left;
+    border-radius: 21px;
+    padding: 94px 29px 65px 32px ;
+}
+.remodal-close{
+    top: 20px;
+    right: 20px;
+    left: auto;
+    width: 30px;
+    height: 30px;
+}
+.remodal-close:before{
+    content: '';
+    background-image: url("../img/remodal-close.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.remodal p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+}
+
 .galamart-11-wrp{
     position: relative;
 }
