@@ -50,6 +50,10 @@ body{
     height: auto;
 }
 
+.galamart-11-wrp{
+    position: relative;
+}
+
 
 .galamart-11-hero{
     position: relative;
@@ -114,6 +118,7 @@ body{
 
 .galamart-11-catalog{
     padding-bottom: 133px;
+    position: relative;
 }
 .galamart-11-catalog__body{
     max-width: 1110px;
@@ -199,4 +204,45 @@ body{
     color: #FFFFFF;
     margin: 0;
     text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+
+.decor{
+    position: absolute;
+    z-index: -10;
+    opacity: .5;
+    filter: blur(4px);
+}
+.decor1{
+    top: 8%;
+    left: -120px;
+}
+.decor2{
+    top: 38%;
+    left: -120px;
+}
+.decor3{
+    top: 66%;
+    left: -3px;
+}
+.decor4{
+    top: 89%;
+    left: -1px;
+}
+
+.decor5{
+    top: 21%;
+    right: -120px;
+}
+.decor6{
+    top: 43%;
+    right: -82px;
+}
+.decor7{
+    top: 59%;
+    right: -40px;
+}
+.decor8{
+    top: 88%;
+    right: -1px;
 }
