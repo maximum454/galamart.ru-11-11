@@ -237,6 +237,12 @@ body{
     margin: 0;
     position: relative;
     flex-grow: 1;
+    transition: all .3s ease;
+}
+.galamart-11-catalog__figure:hover{
+    transform: scale(1.2);
+    transition: all .3s ease;
+
 }
 .galamart-11-catalog__figure img{
     position: absolute;
