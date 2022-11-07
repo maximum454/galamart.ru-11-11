@@ -37,6 +37,12 @@ body{
     background-size: 100%;
 }
 
+.header-search.only-mobile{
+    position: relative;
+    margin: 0 -15px;
+    padding: 0 15px;
+    background-color: #ffffff;
+}
 .main{
     padding-top: 0;
     overflow: hidden;
