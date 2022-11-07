@@ -36,7 +36,7 @@
         </div>
 
             <div class="galamart-11-catalog">
-                <div class="galamart-11-catalog__body">
+                <div id="viewMoreElem" class="galamart-11-catalog__body">
                     <a href="https://galamart.ru/collections/bytovaya-tekhnika-11-11/" target="_blank" class="galamart-11-catalog__item vertical">
                         <figure class="galamart-11-catalog__figure">
                             <img class="img-fluid d-desktop" src="./img/tehnika.png" width="415" height="632" alt="">
@@ -210,21 +210,57 @@
 <script src="js/galamart-11-11.js"></script>
 
 <script>
-    var image = document.getElementsByClassName('decor-img');
-    new simpleParallax(image, {
-        overflow: true,
-        scale: 2.5
-    });
-
-    gsap.registerPlugin(ScrollTrigger);
-
-
-    const tl = gsap.timeline({
-        scrollTrigger:{
+    function animateFrom(elem, direction) {
+        direction = direction || 1;
+        var x = 0,
+            y = direction * 100;
+        if(elem.classList.contains("gs_reveal_fromLeft")) {
+            x = -100;
+            y = 0;
+        } else if (elem.classList.contains("gs_reveal_fromRight")) {
+            x = 100;
+            y = 0;
         }
+        elem.style.transform = "translate(" + x + "px, " + y + "px)";
+        elem.style.opacity = "0";
+        gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
+            duration: 1.25,
+            x: 0,
+            y: 0,
+            autoAlpha: 1,
+            ease: "expo",
+            overwrite: "auto"
+        });
+    }
+
+    function hide(elem) {
+        gsap.set(elem, {autoAlpha: 0});
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var image = document.getElementsByClassName('decor-img');
+        new simpleParallax(image, {
+            overflow: true,
+            scale: 2.5
+        });
+
+        let item = document.querySelectorAll('.galamart-11-catalog__item');
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.fromTo('.galamart-11-hero__body', {opacity: 0}, {duration: 3, opacity:1})
+
+        gsap.utils.toArray(item).forEach(function(elem) {
+            hide(elem); // assure that the element is hidden when scrolled into view
+
+            ScrollTrigger.create({
+                trigger: elem,
+                scrub: 1,
+                onEnter: function() { animateFrom(elem) },
+                onEnterBack: function() { animateFrom(elem, -1) },
+                onLeave: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+            });
+        });
     });
-    //tl.fromTo('.galamart-11-hero__body', {opacity: 0}, {duration: 3, opacity:1})
-    //  .staggerTo('.galamart-11-catalog__item', {opacity: 0}, {duration: 3, opacity:1});
 
 </script>
 </body>
