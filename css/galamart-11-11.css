@@ -322,6 +322,23 @@ body{
     }
 }
 @media (max-width: 767px) {
+    .remodal {
+        border: 11px solid #FDB913;
+        border-radius: 15px;
+        padding: 56px 15px 100px 15px;
+    }
+    .remodal-close{
+        top: auto;
+        bottom: 29px;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .remodal p{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
     .galamart-11-hero{
         padding: 16px 20px;
         margin-bottom: 34px;
