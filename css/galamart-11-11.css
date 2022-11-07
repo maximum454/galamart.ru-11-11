@@ -264,41 +264,39 @@ body{
 .decor{
     position: absolute;
     z-index: -10;
-    opacity: .5;
-    filter: blur(4px);
 }
 .decor1{
-    top: 8%;
-    left: -120px;
+    top: 4%;
+    left: -70px;
 }
 .decor2{
-    top: 38%;
-    left: -120px;
+    top: 35%;
+    left: -191px;
 }
 .decor3{
-    top: 66%;
-    left: -3px;
+    top: 65%;
+    left: -77px;
 }
 .decor4{
-    top: 89%;
-    left: -1px;
+    top: 88%;
+    left: -35px;
 }
 
 .decor5{
-    top: 21%;
-    right: -120px;
+    top: 18%;
+    right: -84px;
 }
 .decor6{
-    top: 43%;
-    right: -82px;
+    top: 40%;
+    right: -132px;
 }
 .decor7{
     top: 59%;
-    right: -40px;
+    right: -22px;
 }
 .decor8{
-    top: 88%;
-    right: -1px;
+    top: 86%;
+    right: -100px;
 }
 
 @media (max-width: 1023px) {
