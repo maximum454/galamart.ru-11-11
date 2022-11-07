@@ -50,6 +50,22 @@ body{
     height: auto;
 }
 
+.d-mobile{
+    display: none;
+}
+.d-desktop{
+    display: block;
+}
+@media (max-width: 767px) {
+    .d-mobile{
+        display: block!important;
+    }
+    .d-desktop{
+        display: none!important;
+    }
+}
+
+
 .remodal{
     max-width: 800px;
     border: 20px solid #FDB913;
@@ -105,7 +121,7 @@ body{
     flex-shrink: 0;
 }
 .galamart-11-hero__content{
-    flex: 1 0 545px;
+    flex: 1 1 545px;
     max-width: 545px;
 }
 .galamart-11-hero__title{
@@ -149,14 +165,14 @@ body{
 }
 
 .galamart-11-catalog{
-    padding-bottom: 133px;
     position: relative;
+    padding: 0 15px 133px;
 }
 .galamart-11-catalog__body{
     max-width: 1110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(333px,352px));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 38px 24px;
 }
 .galamart-11-catalog__item{
@@ -277,4 +293,107 @@ body{
 .decor8{
     top: 88%;
     right: -1px;
+}
+
+@media (max-width: 1023px) {
+    .galamart-11-hero__body{
+        display: flex;
+        max-width: 1110px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .galamart-11-hero__logo{
+        margin: 0 auto;
+
+    }
+    .galamart-11-hero__content{
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    .galamart-11-catalog__item{
+        height: 300px;
+    }
+    .galamart-11-catalog__item.vertical{
+        height: 644px;
+
+    }
+}
+@media (max-width: 767px) {
+    .galamart-11-hero{
+        padding: 16px 20px;
+        margin-bottom: 34px;
+    }
+    .galamart-11-hero__body{
+        gap: 20px;
+    }
+    .galamart-11-hero__logo{
+        left: 50%;
+        transform: translate(-50%,0);
+        position: relative;
+        max-width: 130%;
+        margin-left: 12px;
+        margin-top: -12px;
+    }
+    .galamart-11-hero__anons{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 30px;
+    }
+    .galamart-11-hero__btn{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 14px;
+    }
+
+    .galamart-11-catalog{
+        padding: 0 20px 65px;
+    }
+    .galamart-11-catalog__body{
+        display: block;
+    }
+    .galamart-11-catalog__item,
+    .galamart-11-catalog__item.vertical{
+        height: 188px;
+        padding: 20px 30px 29px;
+        margin-bottom: 24px;
+    }
+    .galamart-11-catalog__item:before{
+        padding: 14px;
+        border-radius: 38px;
+    }
+    .galamart-11-catalog__item:after{
+        top: 15px;
+        width: calc(100% - 26px);
+        height: 30px;
+        z-index: -2;
+        border-radius: 20px;
+    }
+    .galamart-11-catalog__figure{
+        width: 80%;
+    }
+    .galamart-11-catalog__figure img{
+        display: block;
+        width: auto;
+        height: auto;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        transform: translate(0,0);
+
+    }
+    .galamart-11-catalog__name{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .galamart-11-catalog__name br{
+        display: none;
+    }
+
+    .decor{
+       display: none;
+    }
 }
