@@ -206,7 +206,7 @@ body{
     width: 100%;
     height: 354px;
     margin: 0 auto;
-    padding: 20px 30px 40px;
+    padding: 20px 30px 51px;
     text-decoration: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +225,7 @@ body{
     border-radius: 40px;
     -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+    opacity: 0;
 
 }
 .galamart-11-catalog__item:before{
@@ -289,11 +290,12 @@ body{
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+    position: relative;
 }
-.galamart-11-catalog__figure:hover{
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+.galamart-11-catalog__figure img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -301,11 +303,12 @@ body{
 }
 .galamart-11-catalog__figure img{
     position: absolute;
-    top: 50%;
+    height: auto;
+    /*top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);*/
 }
 .galamart-11-catalog__name{
     font-family: 'Montserrat';
@@ -317,6 +320,202 @@ body{
     text-shadow: 0 4px 4px rgba(0,0,0,.25);
 }
 
+.tehnika-1{
+    top: 7px;
+    left: 5px;
+}
+.tehnika-2{
+    top: 67px;
+    left: 118px;
+}
+.tehnika-3{
+    top: 292px;
+    left: -24px;
+}
+.tehnika-4{
+    top: 273px;
+    left: 150px;
+}
+
+.hoztovar-1{
+    top: 44px;
+    left: -38px;
+}
+.hoztovar-2{
+    top: -8px;
+    left: 93px;
+}
+
+.posuda-1{
+    top: -29px;
+    left: 38px;
+}
+.posuda-2{
+    top: 43px;
+    left: -64px;
+}
+.posuda-3{
+    top: 52px;
+    left: 134px;
+}
+
+.tekstil-2{
+    top: 75px;
+    left: 115px;
+}
+.tekstil-1{
+    top: -10px;
+    left: -27px;
+}
+
+.galantereya-1{
+    top: -35px;
+    left: -10px;
+}
+.galantereya-2{
+    top: 25px;
+    left: 197px;
+}
+.galantereya-3{
+    top: 100px;
+    left: -11px;
+}
+
+.aromotizatory-1{
+    top: 49px;
+    left: -30px;
+}
+.aromotizatory-2{
+    top: -22px;
+    left: 87px;
+}
+.aromotizatory-3{
+    top: -32px;
+    left: 174px;
+}
+
+.kanctovary-1{
+    top: -32px;
+    left: 16px;
+}
+.kanctovary-2{
+    top: -28px;
+    left: 112px;
+}
+.kanctovary-3{
+    top: 74px;
+    left: 138px;
+}
+
+.deti-1{
+    top: -28px;
+    left: 79px;
+}
+.deti-2{
+    top: -14px;
+    left: -21px;
+}
+.deti-3{
+    top: 87px;
+    left: 224px;
+}
+
+.sport-1{
+    top: -23px;
+    left: -21px;
+}
+.sport-2{
+    top: 59px;
+    left: 83px;
+}
+
+.podarki-1{
+    top: 4px;
+    left: -29px;
+}
+.podarki-2{
+    top: 33px;
+    left: 107px;
+}
+.podarki-3{
+    top: -38px;
+    left: 105px;
+}
+
+.newyear-1{
+    top: -55px;
+    left: -1px;
+}
+.newyear-2{
+    top: -38px;
+    left: 97px;
+}
+.newyear-3{
+    top: 26px;
+    left: 193px;
+}
+
+.avto-1{
+    top: -32px;
+    left: -10px;
+}
+.avto-2{
+    top: -73px;
+    left: 125px;
+}
+
+.electronika-1{
+    top: 16px;
+    left: -55px;
+}
+.electronika-2{
+    top: -32px;
+    left: 56px;
+}
+.electronika-3{
+    top: 14px;
+    left: 165px;
+}
+
+.dom-1{
+    top: -33px;
+    left: 144px;
+}
+.dom-2{
+    top: 17px;
+    left: -1px;
+}
+
+.santehnika-1{
+    top: -37px;
+    left: -9px;
+}
+.santehnika-2{
+    top: -24px;
+    left: 150px;
+}
+
+.instrumenty-1{
+    top: -28px;
+    left: 105px;
+}
+.instrumenty-2{
+    top: 28px;
+    left: -23px;
+}
+.instrumenty-3{
+    top: 63px;
+    left: 160px;
+}
+
+.turizm-1{
+    top: -26px;
+    left: -55px;
+}
+.turizm-2{
+    top: -26px;
+    left: 120px;
+}
 
 .decor{
     position: absolute;
@@ -436,6 +635,7 @@ body{
         font-size: 18px;
         line-height: 22px;
         padding: 14px;
+        max-width: 100%;
     }
 
     .galamart-11-catalog{
@@ -462,9 +662,9 @@ body{
         border-radius: 20px;
     }
     .galamart-11-catalog__figure{
-        width: 80%;
+        /*width: 80%;*/
     }
-    .galamart-11-catalog__figure img{
+    /*.galamart-11-catalog__figure img{
         display: block;
         width: auto;
         height: auto;
@@ -475,13 +675,275 @@ body{
         -ms-transform: translate(0,0);
         transform: translate(0,0);
 
-    }
+    }*/
     .galamart-11-catalog__name{
         font-size: 20px;
         line-height: 24px;
     }
     .galamart-11-catalog__name br{
         display: none;
+    }
+
+
+
+    .tehnika-1{
+        top: -22px;
+        left: 41px;
+        width: 73px;
+        transform: rotate(-16deg);
+    }
+    .tehnika-2{
+        top: -12px;
+        left: 143px;
+        width: 120px;
+    }
+    .tehnika-3{
+        top: -48px;
+        left: 70px;
+        width: 142px;
+        transform: rotate(18deg);
+    }
+    .tehnika-4{
+        top: -45px;
+        left: 225px;
+        width: 118px;
+        transform: rotate(6deg);
+    }
+
+    .hoztovar-1{
+        top: -27px;
+        left: 10px;
+        width: 188px;
+    }
+    .hoztovar-2{
+        top: -40px;
+        left: 132px;
+        width: 159px;
+    }
+
+    .posuda-1{
+        top: -49px;
+        left: 73px;
+        width: 173px;
+    }
+    .posuda-2{
+        top: -20px;
+        left: -37px;
+        width: 190px;
+    }
+    .posuda-3{
+        top: -19px;
+        left: 166px;
+        width: 157px;
+    }
+
+    .tekstil-2{
+        top: -41px;
+        left: 103px;
+        width: 217px;
+    }
+    .tekstil-1{
+        top: -32px;
+        left: 10px;
+        width: 208px;
+    }
+
+    .galantereya-1{
+        top: -53px;
+        left: 63px;
+        width: 200px;
+        transform: rotate(21deg);
+    }
+    .galantereya-2{
+        top: 12px;
+        left: 181px;
+        width: 105px;
+        transform: rotate(10deg);
+    }
+    .galantereya-3{
+        top: -5px;
+        left: 25px;
+        width: 158px;
+    }
+
+    .aromotizatory-1{
+        top: 3px;
+        left: 36px;
+        width: 100px;
+    }
+    .aromotizatory-2{
+        top: -36px;
+        left: 119px;
+        width: 93px;
+    }
+    .aromotizatory-3{
+        top: -36px;
+        left: 193px;
+        width: 98px;
+        transform: rotate(11deg);
+    }
+
+    .kanctovary-1{
+        top: -57px;
+        left: 13px;
+        width: 104px;
+        transform: rotate(-23deg);
+    }
+    .kanctovary-2{
+        top: -33px;
+        left: 97px;
+        width: 125px;
+    }
+    .kanctovary-3{
+        top: -5px;
+        left: 174px;
+        width: 161px;
+    }
+
+    .deti-1{
+        top: -32px;
+        left: 164px;
+        width: 165px;
+        transform: rotate(10deg);
+    }
+    .deti-2{
+        top: -42px;
+        left: 30px;
+        width: 122px;
+    }
+    .deti-3{
+        top: 19px;
+        left: 117px;
+        width: 104px;
+    }
+
+    .sport-1{
+        top: -46px;
+        left: 17px;
+        width: 228px;
+        transform: rotate(4deg);
+    }
+    .sport-2{
+        top: -8px;
+        left: 139px;
+        width: 173px;
+        transform: rotate(-11deg);
+    }
+
+    .podarki-1{
+        top: -38px;
+        left: 17px;
+        width: 126px;
+    }
+    .podarki-2{
+        top: -33px;
+        left: 149px;
+        width: 194px;
+    }
+    .podarki-3{
+        top: -52px;
+        left: 99px;
+        width: 125px;
+    }
+
+    .newyear-1{
+        top: -49px;
+        left: 19px;
+        width: 109px;
+    }
+    .newyear-2{
+        top: -52px;
+        left: 72px;
+        width: 198px;
+    }
+    .newyear-3{
+        top: 11px;
+        left: 182px;
+        width: 114px;
+    }
+
+    .avto-1{
+        top: -43px;
+        left: 55px;
+        width: 163px;
+    }
+    .avto-2{
+        top: -65px;
+        left: 124px;
+        width: 173px;
+        transform: rotate(17deg);
+    }
+
+    .electronika-1{
+        top: -27px;
+        left: -12px;
+        width: 181px;
+        transform: rotate(-22deg);
+    }
+    .electronika-2{
+        top: -18px;
+        left: 112px;
+        width: 112px;
+        transform: rotate(30deg);
+    }
+    .electronika-3{
+        top: -32px;
+        left: 179px;
+        width: 145px;
+    }
+
+    .dom-1{
+        top: -42px;
+        left: 168px;
+        width: 124px;
+    }
+    .dom-2{
+        top: -31px;
+        left: 31px;
+        width: 139px;
+        transform: rotate(-10deg);
+    }
+
+    .santehnika-1{
+        top: -21px;
+        left: 59px;
+        width: 111px;
+    }
+    .santehnika-2{
+        top: -44px;
+        left: 174px;
+        width: 154px;
+        transform: rotate(32deg);
+    }
+
+    .instrumenty-1{
+        top: -40px;
+        left: 102px;
+        width: 129px;
+    }
+    .instrumenty-2{
+        top: -29px;
+        left: 4px;
+        width: 133px;
+    }
+    .instrumenty-3{
+        top: -14px;
+        left: 187px;
+        width: 139px;
+        transform: rotate(-14deg);
+    }
+
+    .turizm-1{
+        top: -58px;
+        left: -21px;
+        width: 208px;
+        transform: rotate(16deg);
+    }
+    .turizm-2{
+        top: -42px;
+        left: 139px;
+        width: 191px;
+        transform: rotate(-10deg);
     }
 
     .decor{
